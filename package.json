@@ -1,0 +1,32 @@
+{
+  "name": "make-fixture",
+  "version": "1.0.0",
+  "description": "A tiny npm package that provides a quick and easy method for creating new references to fixture objects for testing.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "prepublish": "tsc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsellek/make-fixture.git"
+  },
+  "keywords": [
+    "fixture",
+    "objects",
+    "test",
+    "unit",
+    "unique"
+  ],
+  "author": "Chris Sellek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamsellek/make-fixture/issues"
+  },
+  "homepage": "https://github.com/iamsellek/make-fixture#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  }
+}
