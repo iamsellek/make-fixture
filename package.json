@@ -2,15 +2,15 @@
   "name": "make-fixture",
   "version": "1.0.0",
   "description": "A tiny npm package that provides a quick and easy method for creating new references to fixture objects for testing.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "prepublish": "tsc",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamsellek/make-fixture.git"
+    "url": "https://github.com/iamsellek/make-fixture"
   },
   "keywords": [
     "fixture",
@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/iamsellek/make-fixture#readme",
   "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
     "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
     "typescript": "^3.7.4"
   }
 }
