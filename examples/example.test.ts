@@ -1,3 +1,9 @@
+/**
+ * This is an example of a unit test file that will utilize
+ * your custom make____Fixture functions to create fixture
+ * data.
+ */
+
 import { makeCompanyFixture } from './fixtures/company';
 import { getCompanyPostageString, getFullNameString } from './example';
 import { makePersonFixture } from './fixtures/person';

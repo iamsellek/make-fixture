@@ -1,3 +1,9 @@
+/**
+ * Example types. make-fixture is TS-friendly and TS
+ * automatically infers all types going into and
+ * out of your custom make____Fixture functions!
+ */
+
 export interface Person {
   name: FullName;
   age: number;

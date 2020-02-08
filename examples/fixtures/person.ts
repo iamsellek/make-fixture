@@ -1,3 +1,9 @@
+/**
+ * This is an example of what your code should look like.
+ * The code for this package is nothing but the makeFixture
+ * function.
+ */
+
 import { makeFixture } from '../../index';
 import { Person } from '../types';
 import { makeFullNameFixture } from './fullName';
