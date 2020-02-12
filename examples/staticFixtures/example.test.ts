@@ -4,10 +4,10 @@
  * data.
  */
 
-import { makeCompanyFixture } from './fixtures/company';
-import { getCompanyPostageString, getFullNameString } from './example';
-import { makePersonFixture } from './fixtures/person';
-import { makeFullNameFixture } from './fixtures/fullName';
+import { makeCompanyFixture } from './company'
+import { getCompanyPostageString, getFullNameString } from '../example';
+import { makePersonFixture } from './person';
+import { makeFullNameFixture } from './fullName';
 
 describe('test examples.ts with defaults from makeFixture functions', () => {
   it('should return postage string correctly', () => {
