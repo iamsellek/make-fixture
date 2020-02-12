@@ -1,10 +1,10 @@
 /**
  * This is an example of a unit test file that will utilize
- * your custom make____Fixture functions with faker to 
+ * your custom make____Fixture functions with faker to
  * randomize the data to create fixture data.
  */
 
-import { makeCompanyFixture } from './companyFaker'
+import { makeCompanyFixture } from './companyFaker';
 import { getCompanyPostageString, getFullNameString } from '../example';
 import { makePersonFixture } from './personFaker';
 import { makeFullNameFixture } from './fullNameFaker';

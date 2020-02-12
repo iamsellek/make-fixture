@@ -7,20 +7,19 @@
 
 import { makeFixture } from '../../index';
 import { Person, FullName, JobDescription } from '../types';
-import {makeCompanyFixture} from './companyFaker'
+import { makeCompanyFixture } from './companyFaker';
 import * as faker from 'faker';
 
 export const makePersonFixture = (overrides?: Partial<Person>) => {
-
   const name: FullName = {
-      firstName: faker.name.firstName(),
-      lastName: faker.name.lastName(),
-  }
+    firstName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
+  };
 
   const jobDescription: JobDescription = {
-      company: makeCompanyFixture(),
-      position: faker.name.jobTitle()
-  }
+    company: makeCompanyFixture(),
+    position: faker.name.jobTitle(),
+  };
 
   const defaults: Person = {
     name,

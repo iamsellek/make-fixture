@@ -11,7 +11,7 @@ import * as faker from 'faker';
 
 export const makeCompanyFixture = (overrides?: Partial<Company>) => {
   const defaults: Company = {
-    name: faker.company.companyName(), 
+    name: faker.company.companyName(),
     address: faker.address.streetAddress(),
   };
 

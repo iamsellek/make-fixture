@@ -4,7 +4,7 @@
  * data.
  */
 
-import { makeCompanyFixture } from './company'
+import { makeCompanyFixture } from './company';
 import { getCompanyPostageString, getFullNameString } from '../example';
 import { makePersonFixture } from './person';
 import { makeFullNameFixture } from './fullName';

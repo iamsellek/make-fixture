@@ -1,5 +1,5 @@
 /**
- * This is an example of what your code should look like 
+ * This is an example of what your code should look like
  * if you implement faker.
  * The code for this package is nothing but the makeFixture
  * function.
