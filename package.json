@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/iamsellek/make-fixture#readme",
   "devDependencies": {
+    "@types/faker": "^4.1.9",
     "@types/jest": "^25.1.0",
+    "faker": "^4.1.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",
