@@ -27,11 +27,11 @@
   "homepage": "https://github.com/iamsellek/make-fixture#readme",
   "devDependencies": {
     "@types/faker": "^4.1.9",
-    "@types/jest": "^26.0.0",
+    "@types/jest": "^26.0.13",
     "faker": "^4.1.0",
-    "jest": "^26.0.1",
-    "prettier": "^2.0.5",
-    "ts-jest": "^26.1.0",
-    "typescript": "^3.7.5"
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^3.9.7"
   }
 }
