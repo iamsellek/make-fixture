@@ -10,7 +10,7 @@ module.exports = {
   },
   collectCoverage: true,
   coverageReporters: ['cobertura', 'html'],
-  testPathIgnorePatterns: ['/node_modules'],
+  testPathIgnorePatterns: ['node_modules'],
   moduleDirectories: ['node_modules', '<rootDir>'],
   transformIgnorePatterns: ['node_modules'],
   preset: 'ts-jest',
