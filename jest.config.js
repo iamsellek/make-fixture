@@ -1,8 +1,17 @@
 module.exports = {
-  roots: ['<rootDir>'],
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.json',
+    },
+  },
+  roots: ['<rootDir>/src'],
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-  moduleFileExtensions: ['ts', 'js'],
+  collectCoverage: true,
+  coverageReporters: ['cobertura', 'html'],
+  testPathIgnorePatterns: ['/node_modules'],
+  moduleDirectories: ['node_modules', '<rootDir>'],
+  transformIgnorePatterns: ['node_modules'],
+  preset: 'ts-jest',
 };
