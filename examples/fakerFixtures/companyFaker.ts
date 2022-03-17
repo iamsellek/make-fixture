@@ -5,9 +5,9 @@
  * function.
  */
 
-import { Company } from '../types';
+import faker from '@faker-js/faker';
 import { makeFixture } from '../../index';
-import * as faker from 'faker';
+import { Company } from '../types';
 
 export const makeCompanyFixture = (overrides?: Partial<Company>) => {
   const defaults: Company = {

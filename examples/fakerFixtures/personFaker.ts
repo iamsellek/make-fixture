@@ -5,10 +5,10 @@
  * function.
  */
 
+import faker from '@faker-js/faker';
 import { makeFixture } from '../../index';
-import { Person, FullName, JobDescription } from '../types';
+import { FullName, JobDescription, Person } from '../types';
 import { makeCompanyFixture } from './companyFaker';
-import * as faker from 'faker';
 
 export const makePersonFixture = (overrides?: Partial<Person>) => {
   const name: FullName = {

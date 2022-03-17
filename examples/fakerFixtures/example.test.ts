@@ -4,10 +4,10 @@
  * randomize the data to create fixture data.
  */
 
-import { makeCompanyFixture } from './companyFaker';
 import { getCompanyPostageString, getFullNameString } from '../example';
-import { makePersonFixture } from './personFaker';
+import { makeCompanyFixture } from './companyFaker';
 import { makeFullNameFixture } from './fullNameFaker';
+import { makePersonFixture } from './personFaker';
 
 describe('test examples.ts with defaults from makeFixture functions', () => {
   it('should return postage string correctly', () => {
