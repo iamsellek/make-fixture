@@ -5,7 +5,7 @@
  * function.
  */
 
-import faker from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 import { makeFixture } from '../../index';
 import { FullName, JobDescription, Person } from '../types';
 import { makeCompanyFixture } from './companyFaker';
