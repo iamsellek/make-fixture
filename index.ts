@@ -14,7 +14,11 @@ export const makeFixtures = <T>(
   for (let i = 0; i < count; i++) {
     if (uniqueIdentifierKey !== undefined) {
       fixtures.push(
-        makeFixture(defaults, { ...overrides, [uniqueIdentifierKey]: i })
+        makeFixture(defaults, {
+          ...overrides,
+          [uniqueIdentifierKey]:
+            typeof defaults[uniqueIdentifierKey] === 'string' ? `${i}` : i,
+        })
       );
     } else {
       fixtures.push(makeFixture(defaults, overrides));

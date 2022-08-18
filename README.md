@@ -20,9 +20,19 @@ Then Kevin noticed that the only reason we were doing this was to force JS to pi
 
 ## Examples
 
+### One fixture at a time
+
 Using the make-fixture package is dead-simple. Just take a look at the examples in the `examples` directory! To create a new type of fixture object (let's use the `makeCompanyFixture` example in `examples/company.ts`), just declare a function named `makeCompanyFixture` that takes an `overrides` parameter. This parameter is optional and a TS Partial of the type of fixture object you're creating.
 
 Create a default object of type `Company`. (We've found that it's good practice to only create default values for the key-value-pairs that are NOT optional. You can always create those optional parameters for one specific test or another by passing them in with your call to your custom `make____Fixture` function.) Then just pass your defaults into make-fixture's `makeFixture` function, which will override the defaults with whatever overrides are passed in!
+
+### Many fixtures at once
+
+Before v1.1.0, if you wanted to generate a group of fixtures at once, you would have to call one of your makeFixture functions over and over. Copying and pasting just a function call is one thing, but what if you needed to generate every one of the resulting fixtures with one key being a unique identifier? Well now, you had to override every single call to your makeFixture function with a unique identifier. This was a pain and the whole reason computers exist is to remove mindless, repetitive tasks from our day-to-day.
+
+With release v1.1.0, we've added a new function, `makeFixtures` (we're creative), which will take two new parameters, a `count` parameter and a `uniqueIdentifierKey` parameter. The `count`, obviously, is the number of fixtures you need for your given scenario. The `uniqueIdentifierKey` is the name of the key that is the unique identifier for a given fixture. The `makeFixtures` function will automatically generate a unique identifier for each fixture in the array it passes back to you! Hooray for automation!
+
+Take a look at the `company.ts` file to see an example of this in action!
 
 ## TypeScript
 

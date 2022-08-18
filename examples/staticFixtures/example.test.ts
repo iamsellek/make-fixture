@@ -4,7 +4,7 @@
  * data.
  */
 
-import { makeCompanyFixture } from './company';
+import { makeCompanyFixture, makeCompanyFixtures } from './company';
 import { getCompanyPostageString, getFullNameString } from '../example';
 import { makePersonFixture } from './person';
 import { makeFullNameFixture } from './fullName';
@@ -46,4 +46,10 @@ describe('test examples.ts with overrides', () => {
 
     expect(getFullNameString(person)).toBe('Leia Organa');
   });
+});
+
+describe('test examples.ts and generate several companies', () => {
+  const companies = makeCompanyFixtures(3);
+
+  expect(companies.length).toBe(3);
 });

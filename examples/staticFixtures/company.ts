@@ -5,7 +5,7 @@
  */
 
 import { Company } from '../types';
-import { makeFixture } from '../../index';
+import { makeFixture, makeFixtures } from '../../index';
 
 export const makeCompanyFixture = (overrides?: Partial<Company>) => {
   const defaults: Company = {
@@ -15,3 +15,9 @@ export const makeCompanyFixture = (overrides?: Partial<Company>) => {
 
   return makeFixture(defaults, overrides);
 };
+
+export const makeCompanyFixtures = (
+  count: number,
+  overrides?: Partial<Company>,
+  uniqueId?: keyof Company
+) => makeFixtures(makeCompanyFixture(), count, overrides, uniqueId);
