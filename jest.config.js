@@ -8,6 +8,7 @@ module.exports = {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
+  testMatch: ['**/*.test.ts'],
   collectCoverage: true,
   coverageReporters: ['cobertura', 'html'],
   testPathIgnorePatterns: ['node_modules'],
