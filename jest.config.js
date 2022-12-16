@@ -1,12 +1,12 @@
 module.exports = {
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
-    },
-  },
   roots: ['<rootDir>'],
   transform: {
-    '^.+\\.ts?$': 'ts-jest',
+    '^.+\\.ts?$': [
+      'ts-jest',
+      {
+        tsConfig: 'tsconfig.json',
+      },
+    ],
   },
   testMatch: ['**/*.test.ts'],
   collectCoverage: true,
