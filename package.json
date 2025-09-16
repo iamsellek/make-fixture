@@ -5,10 +5,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc",
+    "typecheck:watch": "tsc --watch",
     "build": "tsc -p .",
-    "prepublish": "npm test && npm run build",
+    "prepublish": "npm test && npm run typecheck && npm run build",
     "lint": "prettier --write ."
   },
   "prepublish": "tsc",
@@ -31,11 +33,11 @@
   },
   "homepage": "https://github.com/iamsellek/make-fixture#readme",
   "devDependencies": {
-    "@faker-js/faker": "^9.9.0",
-    "@types/jest": "^30.0.0",
-    "jest": "^30.0.4",
+    "@faker-js/faker": "^10.0.0",
+    "@types/node": "^24.5.0",
+    "@vitest/coverage-v8": "^3.2.4",
     "prettier": "^3.6.2",
-    "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }

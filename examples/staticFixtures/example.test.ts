@@ -49,7 +49,9 @@ describe('test examples.ts with overrides', () => {
 });
 
 describe('test examples.ts and generate several companies', () => {
-  const companies = makeCompanyFixtures(3);
+  it('should generate 3 companies', () => {
+    const companies = makeCompanyFixtures(3);
 
-  expect(companies.length).toBe(3);
+    expect(companies.length).toBe(3);
+  });
 });
